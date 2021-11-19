@@ -4,7 +4,7 @@ This repo goes step-by-step in the creation of a server using Node + Express and
 
 *Created on November 19, 2021 by DigitalNaut*
 
-*No rights reserved. Clone and use freely, although credits are much appreciated.*
+*No rights reserved. Clone and use freely.*
 
 # Resources
 
@@ -235,6 +235,6 @@ Reference:
 
 # Conclusions
 
-Setting up a Node+Express server can be a long and tedious process, but the results are worth the effort. You should be able to get up and running with this project.
+Setting up a Node+Express server can be a long and tedious process, but the results are worth the effort. You should be able to get up and running by following the instructions above or cloning this project.
 
 Questions, comments, and suggestions are welcome. 😋
