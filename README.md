@@ -189,7 +189,7 @@ app.use('/users', usersRouter);
 export default app;
 ```
 
-*Some files may need to specify TypeScript types in-line to work*
+*Some files may need to specify inline TypeScript types to work in certain functions and variable definitions*
 
 
 ## Configure package.json Scripts
@@ -225,11 +225,11 @@ Reference:
 ### Composite scripts
 - **"build"**: Removes previous transpilations and creates a new one using Rimraf and then Babel
 
-- **"dev"**: Main script to run and build the server from a compiled and transpiled source by Babel
+- **"dev"**: Main script to run and build the server from a compiled and transpiled source by Babel. *Unix users may need to remove the `set` keyword and the double ampersads `&&`*
 
 - **"watch"**: Recommended - Restarts the server and runs the above *dev* script on each file save
 
-- **"production"**: Almost identical to *dev*, but sets a production flag
+- **"production"**: Almost identical to *dev*, but sets a production flag. *Unix users may need to remove the `set` keyword and the double ampersads `&&`*
 
 - **"start"**: Used by web hosting services
 
