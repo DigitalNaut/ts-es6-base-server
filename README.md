@@ -41,7 +41,7 @@ The links below were all used in the creation of this project.
 
 ## Install dependencies
 
-`npm install -D npm-run-all typescript tslint @babel/core @babel/cli @babel/preset-env @babel/preset-typescript nodemon rimraf`
+`npm install -D npm-run-all typescript tslint nodemon rimraf jest @babel/core @babel/cli @babel/preset-env @babel/preset-typescript`
 
 - **[npm-run-all](https://www.npmjs.com/package/npm-run-all)**: Runs multiple scripts at once
 
