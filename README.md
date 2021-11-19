@@ -12,17 +12,17 @@ The links below were all used in the creation of this project.
 
 ## Base tutorials
 
-[Setting up ES6+ syntax using Babel](https://www.freecodecamp.org/news/how-to-enable-es6-and-beyond-syntax-with-node-and-express-68d3e11fe1ab/)
+- [Setting up ES6+ syntax using Babel](https://www.freecodecamp.org/news/how-to-enable-es6-and-beyond-syntax-with-node-and-express-68d3e11fe1ab/)
 
-[Setting up a Node project with TypeScript](https://www.digitalocean.com/community/tutorials/setting-up-a-node-project-with-typescript)
+- [Setting up a Node project with TypeScript](https://www.digitalocean.com/community/tutorials/setting-up-a-node-project-with-typescript)
 
-[How to use TypeScript with Node](https://www.section.io/engineering-education/how-to-use-typescript-with-nodejs/)
+- [How to use TypeScript with Node](https://www.section.io/engineering-education/how-to-use-typescript-with-nodejs/)
 
 ## Additional info
 
-[Babel with TypesScript](https://www.typescriptlang.org/docs/handbook/babel-with-typescript.html)
+- [Babel with TypesScript](https://www.typescriptlang.org/docs/handbook/babel-with-typescript.html)
 
-[Babel with Typescript Presets](https://babeljs.io/docs/en/babel-preset-typescript)
+- [Babel with Typescript Presets](https://babeljs.io/docs/en/babel-preset-typescript)
 
 # Bare Bones Instructions - How to Setup a Node.js + Express Server with Typescript and ES6
 
@@ -43,21 +43,21 @@ The links below were all used in the creation of this project.
 
 `npm install -D npm-run-all typescript tslint @babel/core @babel/cli @babel/preset-env @babel/preset-typescript nodemon rimraf`
 
-**[npm-run-all](https://www.npmjs.com/package/npm-run-all)**: Runs multiple scripts at once
+- **[npm-run-all](https://www.npmjs.com/package/npm-run-all)**: Runs multiple scripts at once
 
-**[TypeScript](https://www.typescriptlang.org/)**: Type checking during development
+- **[TypeScript](https://www.typescriptlang.org/)**: Type checking during development
 
-**[TSLint](https://palantir.github.io/tslint/)**: Enforces code formatting rules
+- **[TSLint](https://palantir.github.io/tslint/)**: Enforces code formatting rules
 
-**[Babel](https://babeljs.io/)**: Conversion from JavaScript ES2016+ to ES2015 for compatibility with Node.js
+- **[Babel](https://babeljs.io/)**: Conversion from JavaScript ES2016+ to ES2015 for compatibility with Node.js
 
-**[Babel/presets](https://babeljs.io/docs/en/presets/)**: Act as sharable set of Babel plugins and/or config
+- **[Babel/presets](https://babeljs.io/docs/en/presets/)**: Act as sharable set of Babel plugins and/or config
 
-**[Jest](https://jestjs.io/)**: Bonus JavaScript testing framework
+- **[Jest](https://jestjs.io/)**: Bonus JavaScript testing framework
 
-**[Nodemon](https://www.npmjs.com/package/nodemon)**: Allows hot reloading on file save
+- **[Nodemon](https://www.npmjs.com/package/nodemon)**: Allows hot reloading on file save
 
-**[rimraf](https://www.npmjs.com/package/rimraf)**: Removes files, used before applying a new transpilation
+- **[rimraf](https://www.npmjs.com/package/rimraf)**: Removes files, used before applying a new transpilation
 
 ## Adding TypeScript types
 
@@ -212,26 +212,26 @@ Reference:
 ```
 
 ### Base scripts
-**"tsc"**: Configures npm to run the TypeScript Compiler, used internally by Babel
+- **"tsc"**: Configures npm to run the TypeScript Compiler, used internally by Babel
 
-**"clean"**: Removes the /dist folder to avoid conflicts
+- **"clean"**: Removes the /dist folder to avoid conflicts
 
-**"serve"**: Runs the Node server with the compiled code
+- **"serve"**: Runs the Node server with the compiled code
 
-**"transpile"**: Instructs Babel to transpile to a /dist folder, taking into account TypeScript files. *Unix users may need to add quotes around file extensions: '.ts,.tsx'*
+- **"transpile"**: Instructs Babel to transpile to a /dist folder, taking into account TypeScript files. *Unix users may need to add quotes around file extensions: '.ts,.tsx'*
 
-**"test"**: Runs files marked for testing, usually in the \_\_tests\_\_ directory or files named `*.test.ts`
+- **"test"**: Runs files marked for testing, usually in the \_\_tests\_\_ directory or files named `*.test.ts`
 
 ### Composite scripts
-**"build"**: Removes previous transpilations and creates a new one using Rimraf and then Babel
+- **"build"**: Removes previous transpilations and creates a new one using Rimraf and then Babel
 
-**"dev"**: Main script to run and build the server from a compiled and transpiled source by Babel
+- **"dev"**: Main script to run and build the server from a compiled and transpiled source by Babel
 
-**"watch"**: Recommended - Restarts the server and runs the above *dev* script on each file save
+- **"watch"**: Recommended - Restarts the server and runs the above *dev* script on each file save
 
-**"production"**: Almost identical to *dev*, but sets a production flag
+- **"production"**: Almost identical to *dev*, but sets a production flag
 
-**"start"**: Used by web hosting services
+- **"start"**: Used by web hosting services
 
 # Conclusions
 
