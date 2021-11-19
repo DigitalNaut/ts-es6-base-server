@@ -145,9 +145,9 @@ Reference configuration:
 
 ## Convert generated code to ES6+ syntax and TypeScript
 
-This code replaces the generated code with the NPX creation of the project. The major change is the relative paths as per the restructuring of the project above.
+These code snippets are meant to replace sections of the generated code by the `express-generator` tool and fix the relative paths after the restructuring of the project above.
 
-You can literally copy and paste this code below and not miss anything important:
+You can literally copy and paste the code below into the respective files and not miss anything important:
 
 ```js
 // bin/www.js -> bin/www.ts
