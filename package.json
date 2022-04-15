@@ -4,14 +4,13 @@
   "private": true,
   "main": "dist/app.ts",
   "scripts": {
-    "start": "npm run production",
-    "dev": "set NODE_ENV=development && npm-run-all build serve",
+    "start": "set NODE_ENV=development && npm-run-all build serve",
+    "production": "set NODE_ENV=production && npm-run-all build serve",
     "watch": "nodemon",
     "build": "npm-run-all clean transpile",
     "clean": "rimraf dist",
     "transpile": "babel server --out-dir dist --extensions .ts,.tsx",
     "serve": "node ./dist/bin/www",
-    "production": "set NODE_ENV=production && npm-run-all build serve",
     "test": "jest",
     "tsc": "tsc"
   },
