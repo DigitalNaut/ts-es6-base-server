@@ -9,7 +9,6 @@
 import 'net';
 
 import debugLib from 'debug';
-import http from 'http';
 import app from '../app';
 
 const debug = debugLib('server-test:server');
@@ -66,25 +65,14 @@ function onError(error: any) {
 }
 
 /**
- * Create HTTP server.
+ * Listen on provided port, on all network interfaces.
+ * Add event listener for HTTP server "listening" event.
  */
 
-const server = http.createServer(app);
-
-/**
- * Event listener for HTTP server "listening" event.
- */
-
-function onListening() {
+const server = app.listen(port, () => {
   const addr: any = server.address();
   const bind = typeof addr === 'string' ? `pipe ${addr}` : `port ${addr.port}`;
-  debug(`Listening on ${bind}`);
-}
-
-/**
- * Listen on provided port, on all network interfaces.
- */
-
-server.listen(port);
+  console.log(`Server listening on ${bind}`);
+  debug('DEBUGGING MODE');
+});
 server.on('error', onError);
-server.on('listening', onListening);

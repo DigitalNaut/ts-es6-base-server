@@ -5,6 +5,7 @@
   "main": "dist/app.ts",
   "scripts": {
     "start": "set NODE_ENV=development && npm-run-all build serve",
+    "debug": "set DEBUG=* && npm start",
     "production": "set NODE_ENV=production && npm-run-all build serve",
     "watch": "nodemon",
     "build": "npm-run-all clean transpile",
